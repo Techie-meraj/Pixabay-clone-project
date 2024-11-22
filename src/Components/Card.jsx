@@ -6,7 +6,7 @@ import { contextstore} from '../Context/MyContext'
 const Card = () => {
     const {images}=useContext(contextstore)
   return (<>
-  <div className='main grid grid-cols-4 gap-4 mt-6'>
+  <div className='main grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6'>
     {
         images ? images.map((item)=> (
             <div  className="h-[300px] border w-[300px] overflow-hidden rounded-3xl mx-auto">
